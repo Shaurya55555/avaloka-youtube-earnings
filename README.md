@@ -70,6 +70,29 @@ This is correlation, not causation: bigger channels both upload more and earn mo
 - **Extreme outliers.** The top views bin holds 12 channels above 57 billion views, and the earnings histogram's top bin holds 11 channels above $74M. Medians are used instead of means for this reason.
 - **Earnings are estimates**, so the per-1,000-view dollars are indicative, not audited revenue.
 
+## Avaloka's own answers vs the verified ground truth
+
+Phrased as `average X by Y` or `correlation between X and Y`, the open-source CLI answers
+directly and passes validation. The raw outputs are in `avaloka-runs/`:
+
+| Goal given to `avaloka analyze` | Avaloka said | Verified in `analysis.py` | Gap |
+|---|---|---|---|
+| uploads vs highest_yearly_earnings | Pearson r = 0.167 | Spearman 0.386 (0.464 on all rows) | Pearson is dragged down by a few huge channels; the rank correlation is 2-3x stronger |
+| average highest_yearly_earnings by category | Shows $24.4M, Autos & Vehicles $13.2M, `nan` $11.8M, Sports $9.6M | Sci & Tech leads on median earnings per 1,000 views | Means are outlier-driven; Autos & Vehicles is only 2 channels |
+| average uploads by category | News & Politics 112k, Nonprofits 103k | n/a | Same outlier sensitivity |
+
+Three weaknesses showed up, all in `avaloka/goal_analysis.py`:
+
+1. **No group sizes.** A 2-channel group ranked second beside a 13-channel group with nothing to tell the reader.
+2. **`nan` ranks as a category.** 46 rows hold the literal text "nan" in `category`. The loader keeps null-like words as labels on purpose (so "NA" can be Namibia), but the report never said this group might be missing data.
+3. **Pearson only**, on heavy-tailed data, with no hint that it understates the relationship.
+
+I fixed all three on a branch of Avaloka: group sizes (`n=`), a warning when a null-like word ranks as a group,
+a `(missing)` label for true NaN keys, and Spearman printed beside Pearson. The loader's null-word policy is unchanged.
+New output on this dataset: `uploads and highest_yearly_earnings: Pearson r=0.167, Spearman rho=0.464` and
+`category=Autos & Vehicles: mean ... (n=2)`. Three regression tests were added and fail without the fix;
+`pytest tests/avaloka` gives 323 passed, 3 skipped, 9 xfailed.
+
 ## What Avaloka did and did not do
 
 - Auto Insights profiled the file (995 rows, 28 columns, domain "Media/YouTube Analytics"),

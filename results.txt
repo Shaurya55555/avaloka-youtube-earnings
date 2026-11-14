@@ -1,0 +1,54 @@
+DATA QUALITY
+  rows: 995
+  zero_view_channels: 8
+  zero_view_but_over_1M_subs: 8
+  missing_category: 46
+  missing_country: 122
+  zero_uploads: 43
+  zero_earnings: 79
+
+BY CATEGORY (median $ per 1k views, n>=10)
+                         n  median   mean
+category                                
+Science & Technology   17   0.693  0.805
+News & Politics        26   0.676  0.799
+Shows                  13   0.609  0.636
+Sports                 11   0.506  0.921
+Education              45   0.441  0.524
+People & Blogs        132   0.417  0.743
+Comedy                 69   0.405  0.809
+Film & Animation       45   0.400  0.929
+Music                 202   0.347  0.422
+Entertainment         241   0.332  0.609
+Howto & Style          40   0.299  0.465
+Gaming                 94   0.286  0.514
+
+BY COUNTRY (median $ per 1k views, n>=15)
+                   n  median
+Country                    
+India           168   0.671
+Russia           16   0.499
+Brazil           62   0.475
+Indonesia        28   0.426
+Mexico           33   0.352
+South Korea      17   0.344
+United States   311   0.332
+United Kingdom   43   0.307
+Thailand         18   0.262
+Canada           15   0.167
+Spain            22   0.145
+
+SPEARMAN CORRELATIONS
+  subscribers: uploads=0.050  age=0.095
+  highest_yearly_earnings: uploads=0.386  age=-0.025
+  earn_per_1k_views: uploads=0.297  age=-0.150
+
+BY UPLOAD QUARTILE
+                    n  max_uploads  ...  median_yearly_earnings  median_earn_per_1k
+upload_quartile                    ...                                            
+Q1 fewest        238          240  ...                728550.0                0.17
+Q2               236          796  ...               2750000.0                0.42
+Q3               237         2905  ...               3500000.0                0.52
+Q4 most          237       301308  ...               5100000.0                0.47
+
+[4 rows x 5 columns]

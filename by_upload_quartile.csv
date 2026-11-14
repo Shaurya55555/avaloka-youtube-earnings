@@ -1,0 +1,5 @@
+upload_quartile,n,max_uploads,median_subs,median_yearly_earnings,median_earn_per_1k
+Q1 fewest,238,240,18400000.0,728550.0,0.17
+Q2,236,796,16550000.0,2750000.0,0.42
+Q3,237,2905,16700000.0,3500000.0,0.52
+Q4 most,237,301308,19200000.0,5100000.0,0.47

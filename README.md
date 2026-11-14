@@ -87,7 +87,7 @@ Three weaknesses showed up, all in `avaloka/goal_analysis.py`:
 2. **`nan` ranks as a category.** 46 rows hold the literal text "nan" in `category`. The loader keeps null-like words as labels on purpose (so "NA" can be Namibia), but the report never said this group might be missing data.
 3. **Pearson only**, on heavy-tailed data, with no hint that it understates the relationship.
 
-I fixed all three on a branch of Avaloka: group sizes (`n=`), a warning when a null-like word ranks as a group,
+I fixed all three and opened https://github.com/guruvaidev/avaloka/pull/93 : group sizes (`n=`), a warning when a null-like word ranks as a group,
 a `(missing)` label for true NaN keys, and Spearman printed beside Pearson. The loader's null-word policy is unchanged.
 New output on this dataset: `uploads and highest_yearly_earnings: Pearson r=0.167, Spearman rho=0.464` and
 `category=Autos & Vehicles: mean ... (n=2)`. Three regression tests were added and fail without the fix;

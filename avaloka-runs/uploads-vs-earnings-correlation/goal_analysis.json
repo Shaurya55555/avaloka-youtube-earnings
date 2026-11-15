@@ -1,0 +1,23 @@
+{
+  "goal": "correlation between uploads and highest_yearly_earnings",
+  "kind": "correlation",
+  "status": "answered",
+  "scope": "All 995 working rows",
+  "columns": [
+    "uploads",
+    "highest_yearly_earnings"
+  ],
+  "metrics": {
+    "pairs": [
+      {
+        "left": "uploads",
+        "right": "highest_yearly_earnings",
+        "r": 0.166904
+      }
+    ]
+  },
+  "findings": [
+    "uploads and highest_yearly_earnings: Pearson r=0.167.",
+    "Correlation alone does not establish causation."
+  ]
+}

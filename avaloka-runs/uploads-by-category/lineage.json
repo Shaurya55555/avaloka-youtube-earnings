@@ -1,0 +1,122 @@
+{
+  "mission_id": "0cb577ad66f9",
+  "kind": "analyze",
+  "started_at_epoch": 1794664836.0279148,
+  "source": {
+    "path": "app/sample_data/Global_YouTube_Statistics.csv",
+    "sha256": "950895e16683d2944cf40ded2d57052c5c27de8339b0e3713ac421e1b589de21",
+    "format": "csv"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "avaloka_mission_id": "0cb577ad66f9"
+  },
+  "transformations": [
+    {
+      "op": "strip_whitespace",
+      "columns": [
+        "Youtuber",
+        "category",
+        "Title",
+        "Country",
+        "Abbreviation",
+        "channel_type",
+        "created_month"
+      ]
+    },
+    {
+      "op": "flag_high_missingness",
+      "columns": [
+        "subscribers_for_last_30_days"
+      ],
+      "applied": false,
+      "note": "Imputation deferred to a human decision; see assumptions.yaml."
+    }
+  ],
+  "work_units": [
+    {
+      "firefly": "data_scout",
+      "human_role": "Data analyst",
+      "output": "Profiled 28 columns x 995 rows; quality score 88/100 with 1 issues flagged.",
+      "manual_minutes": 213,
+      "compute_cost_usd": 4.5e-05,
+      "model_cost_usd": 0.0,
+      "duration_seconds": 0.0753,
+      "notes": "",
+      "metadata": {
+        "quality_score": 88,
+        "n_issues": 1
+      }
+    },
+    {
+      "firefly": "sampling_specialist",
+      "human_role": "Data scientist",
+      "output": "Working sample: 995 rows (none). 995 rows fits the live full-analysis lane; the full dataset is used so no information is discarded.",
+      "manual_minutes": 30.0,
+      "compute_cost_usd": 0.0,
+      "model_cost_usd": 0.0,
+      "duration_seconds": 0.0002,
+      "notes": "",
+      "metadata": {
+        "sampled": false,
+        "strategy": "none"
+      }
+    },
+    {
+      "firefly": "data_engineer",
+      "human_role": "Data engineer",
+      "output": "Applied 2 documented transformations; wrote transformed_dataset.parquet (995x28) + reproducible analysis.py / analysis.ipynb.",
+      "manual_minutes": 314,
+      "compute_cost_usd": 1.2e-05,
+      "model_cost_usd": 0.0,
+      "duration_seconds": 0.0195,
+      "notes": "",
+      "metadata": {
+        "n_transformations": 2
+      }
+    },
+    {
+      "firefly": "analysis_planner",
+      "human_role": "Senior data scientist",
+      "output": "Planned task='exploratory_analysis' with 0 candidate(s); split='none'; 2 human approval gate(s).",
+      "manual_minutes": 60.0,
+      "compute_cost_usd": 2e-06,
+      "model_cost_usd": 0.0,
+      "duration_seconds": 0.0031,
+      "notes": "",
+      "metadata": {
+        "task": "exploratory_analysis",
+        "n_candidates": 0
+      }
+    },
+    {
+      "firefly": "validator",
+      "human_role": "Model-risk specialist",
+      "output": "Validation verdict='pass'; 1 checks; max safe deployment level 1.",
+      "manual_minutes": 172,
+      "compute_cost_usd": 0.0,
+      "model_cost_usd": 0.0,
+      "duration_seconds": 0.0001,
+      "notes": "",
+      "metadata": {
+        "verdict": "pass",
+        "max_level": 1
+      }
+    }
+  ],
+  "outputs": [
+    "analysis.ipynb",
+    "analysis.py",
+    "assumptions.yaml",
+    "data_quality.json",
+    "executive_report.html",
+    "goal_analysis.json",
+    "planner_graph.json",
+    "technical_report.html",
+    "transformed_dataset.parquet",
+    "validation_report.json",
+    "workload.json"
+  ]
+}

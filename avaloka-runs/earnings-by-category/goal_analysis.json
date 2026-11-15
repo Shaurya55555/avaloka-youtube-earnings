@@ -1,0 +1,64 @@
+{
+  "goal": "average highest_yearly_earnings by category",
+  "kind": "group_comparison",
+  "status": "answered",
+  "scope": "All 995 working rows",
+  "columns": [
+    "category",
+    "highest_yearly_earnings"
+  ],
+  "metrics": {
+    "group_column": "category",
+    "value_column": "highest_yearly_earnings",
+    "aggregation": "mean",
+    "groups": [
+      {
+        "group": "Shows",
+        "value": 24384615.384615
+      },
+      {
+        "group": "Autos & Vehicles",
+        "value": 13150000.0
+      },
+      {
+        "group": "nan",
+        "value": 11813013.67
+      },
+      {
+        "group": "Sports",
+        "value": 9615118.181818
+      },
+      {
+        "group": "Pets & Animals",
+        "value": 9575086.5
+      },
+      {
+        "group": "Film & Animation",
+        "value": 8797580.362826
+      },
+      {
+        "group": "Education",
+        "value": 8324391.133333
+      },
+      {
+        "group": "Comedy",
+        "value": 8038623.188406
+      },
+      {
+        "group": "News & Politics",
+        "value": 7707752.655769
+      },
+      {
+        "group": "Entertainment",
+        "value": 7483962.139212
+      }
+    ]
+  },
+  "findings": [
+    "category=Shows: mean highest_yearly_earnings=2.44e+07.",
+    "category=Autos & Vehicles: mean highest_yearly_earnings=1.32e+07.",
+    "category=nan: mean highest_yearly_earnings=1.18e+07.",
+    "category=Sports: mean highest_yearly_earnings=9.62e+06.",
+    "category=Pets & Animals: mean highest_yearly_earnings=9.58e+06."
+  ]
+}

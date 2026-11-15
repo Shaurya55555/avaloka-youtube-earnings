@@ -1,0 +1,48 @@
+mission:
+  id: a7c4ae978dc3
+  goal: correlation between uploads and highest_yearly_earnings
+  kind: analyze
+sampling:
+  sampled: false
+  reason: 995 rows fits the live full-analysis lane; the full dataset is used so no
+    information is discarded.
+  n_input_rows: 995
+  n_working_rows: 995
+  strategy: none
+  stratify_by: null
+transformations:
+- op: strip_whitespace
+  columns:
+  - Youtuber
+  - category
+  - Title
+  - Country
+  - Abbreviation
+  - channel_type
+  - created_month
+- &id001
+  op: flag_high_missingness
+  columns:
+  - subscribers_for_last_30_days
+  applied: false
+  note: Imputation deferred to a human decision; see assumptions.yaml.
+task_choice:
+  task: exploratory_analysis
+  reason: No --target supplied; mission is analysis-only.
+split:
+  strategy: none
+  reason: Analysis-only mission; no model split required.
+human_approval_gates:
+- Confirm the target and metric match the intended decision.
+- Decide an imputation policy for high-missingness columns.
+refuse_if:
+- Target leakage is detected and unresolved.
+- Data is insufficient for a stable estimate of the chosen metric.
+- A requested deployment latency cannot be met by any candidate.
+data_quality_issues:
+- severity: high
+  column: subscribers_for_last_30_days
+  kind: high_missingness
+  detail: 33.9% missing.
+deferred_decisions:
+- *id001

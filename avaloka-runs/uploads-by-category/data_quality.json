@@ -1,0 +1,1114 @@
+{
+  "dataset": {
+    "source": "app/sample_data/Global_YouTube_Statistics.csv",
+    "format": "csv",
+    "sha256": "950895e16683d2944cf40ded2d57052c5c27de8339b0e3713ac421e1b589de21",
+    "n_rows": 995,
+    "n_cols": 28,
+    "delimiter": ","
+  },
+  "columns": [
+    {
+      "name": "rank",
+      "dtype": "int64",
+      "role": "id",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 995,
+      "unique_pct": 1.0,
+      "top_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "sample_values": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "name": "Youtuber",
+      "dtype": "object",
+      "role": "id",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 995,
+      "unique_pct": 1.0,
+      "top_values": [
+        {
+          "value": "T-Series",
+          "count": 1
+        },
+        {
+          "value": "YouTube Movies",
+          "count": 1
+        },
+        {
+          "value": "MrBeast",
+          "count": 1
+        },
+        {
+          "value": "Cocomelon - Nursery Rhymes",
+          "count": 1
+        },
+        {
+          "value": "SET India",
+          "count": 1
+        },
+        {
+          "value": "Music",
+          "count": 1
+        },
+        {
+          "value": "\u00fd\u00fd\u00fd Kids Diana Show",
+          "count": 1
+        },
+        {
+          "value": "PewDiePie",
+          "count": 1
+        },
+        {
+          "value": "Like Nastya",
+          "count": 1
+        },
+        {
+          "value": "Vlad and Niki",
+          "count": 1
+        }
+      ],
+      "sample_values": [
+        "T-Series",
+        "YouTube Movies",
+        "MrBeast",
+        "Cocomelon - Nursery Rhymes",
+        "SET India"
+      ]
+    },
+    {
+      "name": "subscribers",
+      "dtype": "int64",
+      "role": "numeric",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 289,
+      "unique_pct": 0.2905,
+      "stats": {
+        "min": 12300000.0,
+        "max": 245000000.0,
+        "mean": 22982412.060302,
+        "median": 17700000.0,
+        "std": 17526105.340936,
+        "p25": 14500000.0,
+        "p75": 24600000.0,
+        "skew": 5.5136,
+        "n_outliers": 76
+      },
+      "sample_values": [
+        245000000,
+        170000000,
+        166000000,
+        162000000,
+        159000000
+      ]
+    },
+    {
+      "name": "video views",
+      "dtype": "float64",
+      "role": "id",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 988,
+      "unique_pct": 0.993,
+      "top_values": [
+        {
+          "value": "0.0",
+          "count": 8
+        },
+        {
+          "value": "7564652648.0",
+          "count": 1
+        },
+        {
+          "value": "8333387785.0",
+          "count": 1
+        },
+        {
+          "value": "14198154095.0",
+          "count": 1
+        },
+        {
+          "value": "6624168155.0",
+          "count": 1
+        },
+        {
+          "value": "1777072487.0",
+          "count": 1
+        },
+        {
+          "value": "1576633086.0",
+          "count": 1
+        },
+        {
+          "value": "2143140898.0",
+          "count": 1
+        },
+        {
+          "value": "2400037562.0",
+          "count": 1
+        },
+        {
+          "value": "1760131384.0",
+          "count": 1
+        }
+      ],
+      "sample_values": [
+        228000000000.0,
+        0.0,
+        28368841870.0,
+        164000000000.0,
+        148000000000.0
+      ]
+    },
+    {
+      "name": "category",
+      "dtype": "object",
+      "role": "categorical",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 19,
+      "unique_pct": 0.0191,
+      "top_values": [
+        {
+          "value": "Entertainment",
+          "count": 241
+        },
+        {
+          "value": "Music",
+          "count": 202
+        },
+        {
+          "value": "People & Blogs",
+          "count": 132
+        },
+        {
+          "value": "Gaming",
+          "count": 94
+        },
+        {
+          "value": "Comedy",
+          "count": 69
+        },
+        {
+          "value": "Film & Animation",
+          "count": 46
+        },
+        {
+          "value": "nan",
+          "count": 46
+        },
+        {
+          "value": "Education",
+          "count": 45
+        },
+        {
+          "value": "Howto & Style",
+          "count": 40
+        },
+        {
+          "value": "News & Politics",
+          "count": 26
+        }
+      ],
+      "sample_values": [
+        "Music",
+        "Film & Animation",
+        "Entertainment",
+        "Education",
+        "Shows"
+      ]
+    },
+    {
+      "name": "Title",
+      "dtype": "object",
+      "role": "id",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 992,
+      "unique_pct": 0.997,
+      "top_values": [
+        {
+          "value": "Preston",
+          "count": 2
+        },
+        {
+          "value": "#Refugio Mental",
+          "count": 2
+        },
+        {
+          "value": "Like Nastya Vlog",
+          "count": 2
+        },
+        {
+          "value": "PowerfulJRE",
+          "count": 1
+        },
+        {
+          "value": "Ranz Kyle",
+          "count": 1
+        },
+        {
+          "value": "Jordi Sala",
+          "count": 1
+        },
+        {
+          "value": "Daftar Populer",
+          "count": 1
+        },
+        {
+          "value": "Kim Loaiza",
+          "count": 1
+        },
+        {
+          "value": "It's Mamix",
+          "count": 1
+        },
+        {
+          "value": "NDTV India",
+          "count": 1
+        }
+      ],
+      "sample_values": [
+        "T-Series",
+        "youtubemovies",
+        "MrBeast",
+        "Cocomelon - Nursery Rhymes",
+        "SET India"
+      ]
+    },
+    {
+      "name": "uploads",
+      "dtype": "int64",
+      "role": "numeric",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 777,
+      "unique_pct": 0.7809,
+      "stats": {
+        "min": 0.0,
+        "max": 301308.0,
+        "mean": 9187.125628,
+        "median": 729.0,
+        "std": 34151.352254,
+        "p25": 194.5,
+        "p75": 2667.5,
+        "skew": 5.6669,
+        "n_outliers": 132
+      },
+      "sample_values": [
+        20082,
+        1,
+        741,
+        966,
+        116536
+      ]
+    },
+    {
+      "name": "Country",
+      "dtype": "object",
+      "role": "categorical",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 50,
+      "unique_pct": 0.0503,
+      "top_values": [
+        {
+          "value": "United States",
+          "count": 313
+        },
+        {
+          "value": "India",
+          "count": 168
+        },
+        {
+          "value": "nan",
+          "count": 122
+        },
+        {
+          "value": "Brazil",
+          "count": 62
+        },
+        {
+          "value": "United Kingdom",
+          "count": 43
+        },
+        {
+          "value": "Mexico",
+          "count": 33
+        },
+        {
+          "value": "Indonesia",
+          "count": 28
+        },
+        {
+          "value": "Spain",
+          "count": 22
+        },
+        {
+          "value": "Thailand",
+          "count": 18
+        },
+        {
+          "value": "South Korea",
+          "count": 17
+        }
+      ],
+      "sample_values": [
+        "India",
+        "United States",
+        "United States",
+        "United States",
+        "India"
+      ]
+    },
+    {
+      "name": "Abbreviation",
+      "dtype": "object",
+      "role": "categorical",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 50,
+      "unique_pct": 0.0503,
+      "top_values": [
+        {
+          "value": "US",
+          "count": 313
+        },
+        {
+          "value": "IN",
+          "count": 168
+        },
+        {
+          "value": "nan",
+          "count": 122
+        },
+        {
+          "value": "BR",
+          "count": 62
+        },
+        {
+          "value": "GB",
+          "count": 43
+        },
+        {
+          "value": "MX",
+          "count": 33
+        },
+        {
+          "value": "ID",
+          "count": 28
+        },
+        {
+          "value": "ES",
+          "count": 22
+        },
+        {
+          "value": "TH",
+          "count": 18
+        },
+        {
+          "value": "KR",
+          "count": 17
+        }
+      ],
+      "sample_values": [
+        "IN",
+        "US",
+        "US",
+        "US",
+        "IN"
+      ]
+    },
+    {
+      "name": "channel_type",
+      "dtype": "object",
+      "role": "categorical",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 15,
+      "unique_pct": 0.0151,
+      "top_values": [
+        {
+          "value": "Entertainment",
+          "count": 304
+        },
+        {
+          "value": "Music",
+          "count": 216
+        },
+        {
+          "value": "People",
+          "count": 101
+        },
+        {
+          "value": "Games",
+          "count": 98
+        },
+        {
+          "value": "Comedy",
+          "count": 51
+        },
+        {
+          "value": "Education",
+          "count": 49
+        },
+        {
+          "value": "Film",
+          "count": 42
+        },
+        {
+          "value": "Howto",
+          "count": 36
+        },
+        {
+          "value": "nan",
+          "count": 30
+        },
+        {
+          "value": "News",
+          "count": 30
+        }
+      ],
+      "sample_values": [
+        "Music",
+        "Games",
+        "Entertainment",
+        "Education",
+        "Entertainment"
+      ]
+    },
+    {
+      "name": "video_views_rank",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 1,
+      "missing_pct": 0.001,
+      "n_unique": 953,
+      "unique_pct": 0.9578,
+      "stats": {
+        "min": 1.0,
+        "max": 4057944.0,
+        "mean": 554248.904427,
+        "median": 915.5,
+        "std": 1362782.209881,
+        "p25": 323.0,
+        "p75": 3584.5,
+        "skew": 2.1152,
+        "n_outliers": 178
+      },
+      "sample_values": [
+        1.0,
+        4055159.0,
+        48.0,
+        2.0,
+        3.0
+      ]
+    },
+    {
+      "name": "country_rank",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 116,
+      "missing_pct": 0.1166,
+      "n_unique": 246,
+      "unique_pct": 0.2472,
+      "stats": {
+        "min": 1.0,
+        "max": 7741.0,
+        "mean": 386.05347,
+        "median": 51.0,
+        "std": 1232.244746,
+        "p25": 11.0,
+        "p75": 123.0,
+        "skew": 4.1974,
+        "n_outliers": 74
+      },
+      "sample_values": [
+        1.0,
+        7670.0,
+        1.0,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "name": "channel_type_rank",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 33,
+      "missing_pct": 0.0332,
+      "n_unique": 286,
+      "unique_pct": 0.2874,
+      "stats": {
+        "min": 1.0,
+        "max": 7741.0,
+        "mean": 745.719335,
+        "median": 65.5,
+        "std": 1944.386561,
+        "p25": 27.0,
+        "p75": 139.75,
+        "skew": 2.7511,
+        "n_outliers": 119
+      },
+      "sample_values": [
+        1.0,
+        7423.0,
+        1.0,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "name": "video_views_for_the_last_30_days",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 56,
+      "missing_pct": 0.0563,
+      "n_unique": 908,
+      "unique_pct": 0.9126,
+      "stats": {
+        "min": 1.0,
+        "max": 6589000000.0,
+        "mean": 175610284.794462,
+        "median": 64085000.0,
+        "std": 416378166.206619,
+        "p25": 20137500.0,
+        "p75": 168826500.0,
+        "skew": 8.7771,
+        "n_outliers": 97
+      },
+      "sample_values": [
+        2258000000.0,
+        12.0,
+        1348000000.0,
+        1975000000.0,
+        1824000000.0
+      ]
+    },
+    {
+      "name": "lowest_monthly_earnings",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 557,
+      "unique_pct": 0.5598,
+      "stats": {
+        "min": 0.0,
+        "max": 850900.0,
+        "mean": 36886.148281,
+        "median": 13300.0,
+        "std": 71858.724092,
+        "p25": 2700.0,
+        "p75": 37900.0,
+        "skew": 4.7971,
+        "n_outliers": 99
+      },
+      "sample_values": [
+        564600.0,
+        0.0,
+        337000.0,
+        493800.0,
+        455900.0
+      ]
+    },
+    {
+      "name": "highest_monthly_earnings",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 736,
+      "unique_pct": 0.7397,
+      "stats": {
+        "min": 0.0,
+        "max": 13600000.0,
+        "mean": 589807.847588,
+        "median": 212700.0,
+        "std": 1148622.478478,
+        "p25": 43500.0,
+        "p75": 606800.0,
+        "skew": 4.795,
+        "n_outliers": 99
+      },
+      "sample_values": [
+        9000000.0,
+        0.05,
+        5400000.0,
+        7900000.0,
+        7300000.0
+      ]
+    },
+    {
+      "name": "lowest_yearly_earnings",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 757,
+      "unique_pct": 0.7608,
+      "stats": {
+        "min": 0.0,
+        "max": 10200000.0,
+        "mean": 442257.392533,
+        "median": 159500.0,
+        "std": 861216.103943,
+        "p25": 32650.0,
+        "p75": 455100.0,
+        "skew": 4.802,
+        "n_outliers": 102
+      },
+      "sample_values": [
+        6800000.0,
+        0.04,
+        4000000.0,
+        5900000.0,
+        5500000.0
+      ]
+    },
+    {
+      "name": "highest_yearly_earnings",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 419,
+      "unique_pct": 0.4211,
+      "stats": {
+        "min": 0.0,
+        "max": 163400000.0,
+        "mean": 7081813.919528,
+        "median": 2600000.0,
+        "std": 13797037.614956,
+        "p25": 521750.0,
+        "p75": 7300000.0,
+        "skew": 4.7976,
+        "n_outliers": 99
+      },
+      "sample_values": [
+        108400000.0,
+        0.58,
+        64700000.0,
+        94800000.0,
+        87500000.0
+      ]
+    },
+    {
+      "name": "subscribers_for_last_30_days",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 337,
+      "missing_pct": 0.3387,
+      "n_unique": 53,
+      "unique_pct": 0.0533,
+      "stats": {
+        "min": 1.0,
+        "max": 8000000.0,
+        "mean": 349079.132219,
+        "median": 200000.0,
+        "std": 614355.441025,
+        "p25": 100000.0,
+        "p75": 400000.0,
+        "skew": 6.6778,
+        "n_outliers": 61
+      },
+      "sample_values": [
+        2000000.0,
+        8000000.0,
+        1000000.0,
+        1000000.0,
+        100000.0
+      ]
+    },
+    {
+      "name": "created_year",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 5,
+      "missing_pct": 0.005,
+      "n_unique": 19,
+      "unique_pct": 0.0191,
+      "stats": {
+        "min": 1970.0,
+        "max": 2022.0,
+        "mean": 2012.630303,
+        "median": 2013.0,
+        "std": 4.512503,
+        "p25": 2009.0,
+        "p75": 2016.0,
+        "skew": -0.8446,
+        "n_outliers": 1
+      },
+      "sample_values": [
+        2006.0,
+        2006.0,
+        2012.0,
+        2006.0,
+        2006.0
+      ]
+    },
+    {
+      "name": "created_month",
+      "dtype": "object",
+      "role": "categorical",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "n_unique": 13,
+      "unique_pct": 0.0131,
+      "top_values": [
+        {
+          "value": "Jan",
+          "count": 101
+        },
+        {
+          "value": "Sep",
+          "count": 96
+        },
+        {
+          "value": "Jul",
+          "count": 91
+        },
+        {
+          "value": "Nov",
+          "count": 90
+        },
+        {
+          "value": "Mar",
+          "count": 87
+        },
+        {
+          "value": "May",
+          "count": 84
+        },
+        {
+          "value": "Aug",
+          "count": 82
+        },
+        {
+          "value": "Oct",
+          "count": 78
+        },
+        {
+          "value": "Jun",
+          "count": 73
+        },
+        {
+          "value": "Apr",
+          "count": 72
+        }
+      ],
+      "sample_values": [
+        "Mar",
+        "Mar",
+        "Feb",
+        "Sep",
+        "Sep"
+      ]
+    },
+    {
+      "name": "created_date",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 5,
+      "missing_pct": 0.005,
+      "n_unique": 31,
+      "unique_pct": 0.0312,
+      "stats": {
+        "min": 1.0,
+        "max": 31.0,
+        "mean": 15.746465,
+        "median": 16.0,
+        "std": 8.77752,
+        "p25": 8.0,
+        "p75": 23.0,
+        "skew": -0.0183,
+        "n_outliers": 0
+      },
+      "sample_values": [
+        13.0,
+        5.0,
+        20.0,
+        1.0,
+        20.0
+      ]
+    },
+    {
+      "name": "Gross tertiary education enrollment (%)",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 123,
+      "missing_pct": 0.1236,
+      "n_unique": 47,
+      "unique_pct": 0.0472,
+      "stats": {
+        "min": 7.6,
+        "max": 113.1,
+        "mean": 63.627752,
+        "median": 68.0,
+        "std": 26.106893,
+        "p25": 36.3,
+        "p75": 88.2,
+        "skew": -0.2714,
+        "n_outliers": 0
+      },
+      "sample_values": [
+        28.1,
+        88.2,
+        88.2,
+        88.2,
+        28.1
+      ]
+    },
+    {
+      "name": "Population",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 123,
+      "missing_pct": 0.1236,
+      "n_unique": 48,
+      "unique_pct": 0.0482,
+      "stats": {
+        "min": 202506.0,
+        "max": 1397715000.0,
+        "mean": 430387266.752294,
+        "median": 328239523.0,
+        "std": 472794722.464539,
+        "p25": 83355411.0,
+        "p75": 328239523.0,
+        "skew": 1.3381,
+        "n_outliers": 169
+      },
+      "sample_values": [
+        1366417754.0,
+        328239523.0,
+        328239523.0,
+        328239523.0,
+        1366417754.0
+      ]
+    },
+    {
+      "name": "Unemployment rate",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 123,
+      "missing_pct": 0.1236,
+      "n_unique": 47,
+      "unique_pct": 0.0472,
+      "stats": {
+        "min": 0.75,
+        "max": 14.72,
+        "mean": 9.279278,
+        "median": 9.365,
+        "std": 4.888354,
+        "p25": 5.27,
+        "p75": 14.7,
+        "skew": -0.0367,
+        "n_outliers": 0
+      },
+      "sample_values": [
+        5.36,
+        14.7,
+        14.7,
+        14.7,
+        5.36
+      ]
+    },
+    {
+      "name": "Urban_population",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 123,
+      "missing_pct": 0.1236,
+      "n_unique": 48,
+      "unique_pct": 0.0482,
+      "stats": {
+        "min": 35588.0,
+        "max": 842933962.0,
+        "mean": 224214981.631881,
+        "median": 270663028.0,
+        "std": 154687362.709486,
+        "p25": 55908316.0,
+        "p75": 270663028.0,
+        "skew": 0.3355,
+        "n_outliers": 1
+      },
+      "sample_values": [
+        471031528.0,
+        270663028.0,
+        270663028.0,
+        270663028.0,
+        471031528.0
+      ]
+    },
+    {
+      "name": "Latitude",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 123,
+      "missing_pct": 0.1236,
+      "n_unique": 48,
+      "unique_pct": 0.0482,
+      "stats": {
+        "min": -38.416097,
+        "max": 61.92411,
+        "mean": 26.632783,
+        "median": 37.09024,
+        "std": 20.560533,
+        "p25": 20.593684,
+        "p75": 37.09024,
+        "skew": -1.0318,
+        "n_outliers": 90
+      },
+      "sample_values": [
+        20.593684,
+        37.09024,
+        37.09024,
+        37.09024,
+        20.593684
+      ]
+    },
+    {
+      "name": "Longitude",
+      "dtype": "float64",
+      "role": "numeric",
+      "missing": 123,
+      "missing_pct": 0.1236,
+      "n_unique": 48,
+      "unique_pct": 0.0482,
+      "stats": {
+        "min": -172.104629,
+        "max": 138.252924,
+        "mean": -14.128146,
+        "median": -51.92528,
+        "std": 84.760809,
+        "p25": -95.712891,
+        "p75": 78.96288,
+        "skew": 0.3445,
+        "n_outliers": 0
+      },
+      "sample_values": [
+        78.96288,
+        -95.712891,
+        -95.712891,
+        -95.712891,
+        78.96288
+      ]
+    }
+  ],
+  "quality": {
+    "score": 88,
+    "n_rows": 995,
+    "n_cols": 28,
+    "duplicate_rows": 0,
+    "constant_columns": [],
+    "high_missing_columns": [
+      "subscribers_for_last_30_days"
+    ],
+    "high_cardinality_columns": [],
+    "id_columns": [
+      "rank",
+      "Youtuber",
+      "video views",
+      "Title"
+    ],
+    "issues": [
+      {
+        "severity": "high",
+        "column": "subscribers_for_last_30_days",
+        "kind": "high_missingness",
+        "detail": "33.9% missing."
+      }
+    ]
+  },
+  "correlations": [
+    {
+      "a": "lowest_monthly_earnings",
+      "b": "highest_monthly_earnings",
+      "corr": 1.0
+    },
+    {
+      "a": "lowest_monthly_earnings",
+      "b": "highest_yearly_earnings",
+      "corr": 1.0
+    },
+    {
+      "a": "highest_monthly_earnings",
+      "b": "highest_yearly_earnings",
+      "corr": 1.0
+    },
+    {
+      "a": "lowest_monthly_earnings",
+      "b": "lowest_yearly_earnings",
+      "corr": 0.9999
+    },
+    {
+      "a": "highest_monthly_earnings",
+      "b": "lowest_yearly_earnings",
+      "corr": 0.9999
+    },
+    {
+      "a": "lowest_yearly_earnings",
+      "b": "highest_yearly_earnings",
+      "corr": 0.9999
+    },
+    {
+      "a": "video_views_rank",
+      "b": "channel_type_rank",
+      "corr": 0.9499
+    },
+    {
+      "a": "Population",
+      "b": "Urban_population",
+      "corr": 0.9094
+    }
+  ]
+}

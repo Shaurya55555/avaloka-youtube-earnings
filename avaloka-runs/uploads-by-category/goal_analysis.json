@@ -1,0 +1,64 @@
+{
+  "goal": "average uploads by category",
+  "kind": "group_comparison",
+  "status": "answered",
+  "scope": "All 995 working rows",
+  "columns": [
+    "category",
+    "uploads"
+  ],
+  "metrics": {
+    "group_column": "category",
+    "value_column": "uploads",
+    "aggregation": "mean",
+    "groups": [
+      {
+        "group": "News & Politics",
+        "value": 112484.384615
+      },
+      {
+        "group": "Nonprofits & Activism",
+        "value": 102912.0
+      },
+      {
+        "group": "Shows",
+        "value": 27443.692308
+      },
+      {
+        "group": "Sports",
+        "value": 14493.727273
+      },
+      {
+        "group": "Entertainment",
+        "value": 11908.481328
+      },
+      {
+        "group": "People & Blogs",
+        "value": 9190.780303
+      },
+      {
+        "group": "Trailers",
+        "value": 6839.0
+      },
+      {
+        "group": "Pets & Animals",
+        "value": 4451.5
+      },
+      {
+        "group": "Gaming",
+        "value": 4313.414894
+      },
+      {
+        "group": "Movies",
+        "value": 3553.0
+      }
+    ]
+  },
+  "findings": [
+    "category=News & Politics: mean uploads=1.12e+05.",
+    "category=Nonprofits & Activism: mean uploads=1.03e+05.",
+    "category=Shows: mean uploads=2.74e+04.",
+    "category=Sports: mean uploads=1.45e+04.",
+    "category=Entertainment: mean uploads=1.19e+04."
+  ]
+}
